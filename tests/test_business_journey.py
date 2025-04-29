@@ -48,4 +48,4 @@ def test_business_journey(driver):
     # Step 10: Click 'Zapytaj o ofertę'
     private_cloud_page.click_inquiry_button()
 
-    time.sleep(10)
+    time.sleep(5)

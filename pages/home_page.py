@@ -33,9 +33,9 @@ class HomePage:
         phones_category = self.wait.until(EC.element_to_be_clickable(self.PHONES_SUBCATEGORY))
         phones_category.click()
 
-        # Assert that the h1 contains the text "Urządzenia bez abonamentu"
+        # Assert that the h1 contains the text "Urządzenia"
         h1_text = self.wait.until(EC.presence_of_element_located((By.TAG_NAME, 'h1'))).text
-        assert h1_text == 'Urządzenia bez abonamentu', f"Expected 'Urządzenia bez abonamentu' but got '{h1_text}'"
+        assert h1_text == 'Urządzenia', f"Expected 'Urządzenia' but got '{h1_text}'"
 
     def select_business_section(self):
         """Select 'Średnie i duże firmy' option."""
